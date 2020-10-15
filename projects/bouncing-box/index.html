@@ -13,9 +13,13 @@
 			text-align: center;
 			display: block;
 			position: absolute;
-			top: 100px;
-			left: 0px;  /* <--- Change me! *
+			top: 100px
+			left: 0px;  
 		}
+        .board {
+            background-image: url(https://cdn.britannica.com/67/197567-131-1645A26E/Scottish-fold-cat-feline.jpg);
+            background-color: gray;
+        }
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
@@ -45,7 +49,7 @@
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
-				box.css("left", newPositionX);
+                box.css("left", newPositionX);
 			}
 
 			// changes the text displayed on the Box
@@ -61,7 +65,8 @@
             var positionX = 0
             var points = 0
             var speed = 10
-
+            var positionY;
+            var speedY;
 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
